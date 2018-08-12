@@ -23,6 +23,11 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         
     }
     
+    //sets cell height within tableView
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 170.0
+    }
+    
     //wants to know how many rows in the table view, thus # of items in categories array
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataService.instance.getCategories().count
