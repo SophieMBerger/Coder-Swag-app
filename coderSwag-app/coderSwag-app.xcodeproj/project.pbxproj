@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C24BF31521209140000404F0 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24BF31421209140000404F0 /* ProductCell.swift */; };
 		C2879BD6211F091E0082B1A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2879BD5211F091E0082B1A8 /* AppDelegate.swift */; };
 		C2879BD8211F091E0082B1A8 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2879BD7211F091E0082B1A8 /* CategoriesVC.swift */; };
 		C2879BDB211F091E0082B1A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2879BD9211F091E0082B1A8 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C24BF31421209140000404F0 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		C2879BD2211F091D0082B1A8 /* coderSwag-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coderSwag-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2879BD5211F091E0082B1A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2879BD7211F091E0082B1A8 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				C2E0C3B1211F0EF800B12395 /* CategoryCell.swift */,
+				C24BF31421209140000404F0 /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				C2879BD8211F091E0082B1A8 /* CategoriesVC.swift in Sources */,
 				C2879BD6211F091E0082B1A8 /* AppDelegate.swift in Sources */,
 				C2E0C3B2211F0EF800B12395 /* CategoryCell.swift in Sources */,
+				C24BF31521209140000404F0 /* ProductCell.swift in Sources */,
 				C2DE97BB21205FD800B2A37B /* Category.swift in Sources */,
 				C2DE97BE212062B300B2A37B /* DataService.swift in Sources */,
 			);
