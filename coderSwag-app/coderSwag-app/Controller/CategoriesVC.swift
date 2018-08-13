@@ -50,6 +50,24 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         }
     }
 
+    //passing data into performSegue, so that it can be used in prepareForSegue function
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "ProductsVC", sender: category)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productsVC = segue.destination as? ProductsVC {
+            //need to create a new one, can not modify the default one
+            let barbutton = UIBarButtonItem()
+            barbutton.title = ""
+            navigationItem.backBarButtonItem = barbutton
+            
+            assert(sender as? Category != nil) //forcing crash at build time if value is nil
+            //specifiy that the object type of sender is a Category
+            productsVC.initProducts(category: sender as! Category)
+        }
+    }
     
 
 
